@@ -11,7 +11,7 @@ module.exports = {
 		if (
 			//  日文觸發詞
 			// message.content === 'まつりおはよう' ||
-			// message.content === 'おはよう' ||
+			message.content === 'おはよう' ||
 			// 中文觸發詞
 			message.content === '奶茶喵早安' ||
 			message.content === '早安' ||
@@ -35,7 +35,7 @@ module.exports = {
 		if (
 			//  日文觸發詞
 			// message.content === 'まつりおやすみ' ||
-			// message.content === 'おやすみ' ||
+			message.content === 'おやすみ' ||
 			// 中文觸發詞
 			message.content === '奶茶喵晚安' ||
 			message.content === '晚安' ||
