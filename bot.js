@@ -83,49 +83,5 @@ client.on('interactionCreate', async (interaction) => {
 	}
 });
 */
-client.on('messageCreate', async (message) => {
-	if (message.author.bot) return;
-	if
-	(
-		message.content === 'まつりおはよう' ||
-		message.content === '祭おはよう' ||
-		message.content === 'まつり早安' ||
-		message.content === '祭早安'
-	) {
-		const RandomMorning =
-			[
-				'おはよう！',
-				'早安呀～',
-			];
-		return message.reply(
-			{
-				content: `${RandomMorning[Math.floor(Math.random() * RandomMorning.length)]}`,
-				ephemeral: false,
-			},
-		);
-	}
-	if (message.content === 'まつりおやすみ' || message.content === '祭おやすみ' || message.content === 'まつり晚安' || message.content === '祭晚安') {
-		const RandomMorning =
-			[
-				'おやすみ！',
-				'晚安呀～',
-			];
-		return message.reply(
-			{
-				content: `${RandomMorning[Math.floor(Math.random() * RandomMorning.length)]}`,
-				ephemeral: false,
-			},
-		);
-	}
-	if (message.content === '起來嗨') {
-		const RandomMorning =
-			[
-				'去睡覺',
-				'不要',
-				'再說',
-			];
-		return message.reply({ content: `${RandomMorning[Math.floor(Math.random() * RandomMorning.length)]}`, ephemeral: false });
-	}
-});
 
 client.login(process.env.TOKEN);
