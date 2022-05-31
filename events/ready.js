@@ -1,7 +1,4 @@
 const logger = require('node-color-log');
-// const { execSync } = require('child_process');
-// const fs = require('node:fs');
-// const { generateDependencyReport } = require('@discordjs/voice');
 const date = new Date().toLocaleString(undefined, {
 	year: 'numeric',
 	month: '2-digit',
@@ -24,17 +21,6 @@ module.exports = {
 			}],
 			status: 'online',
 		});
-		/*
-		logger.info('Checking DB status');
-		if (!fs.existsSync('database.sqlite')) {
-			logger.debug('Can\'t find out DB file.');
-			logger.debug('Creating...');
-			execSync('npm run db');
-			logger.debug('Create complete!');
-		}
-		logger.info('DB checked!');
-        */
-		// logger.debug('\n' + generateDependencyReport());
 		logger.debug(`⏳Trying to login system with ${client.user.tag}...`);
 		logger.debug('✔️Logged in success!');
 		logger.info(`Logged in user:${client.user.tag}!`);
