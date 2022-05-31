@@ -10,14 +10,12 @@ module.exports = {
 		}
 		if (
 			//  日文觸發詞
-			// message.content === 'まつりおはよう' ||
 			message.content === 'おはよう' ||
 			// 中文觸發詞
 			message.content === '奶茶喵早安' ||
 			message.content === '早安' ||
 			// 中日混和觸發詞
 			message.content === '奶茶喵おはよう'
-			// message.content === 'まつり早安'
 		) {
 			const RandomMessage =
 			[
@@ -34,14 +32,12 @@ module.exports = {
 		}
 		if (
 			//  日文觸發詞
-			// message.content === 'まつりおやすみ' ||
 			message.content === 'おやすみ' ||
 			// 中文觸發詞
 			message.content === '奶茶喵晚安' ||
 			message.content === '晚安' ||
 			// 中日混和觸發詞
 			message.content === '奶茶喵おやすみ'
-			// message.content === 'まつり晚安'
 		) {
 			const RandomMessage =
 			[
