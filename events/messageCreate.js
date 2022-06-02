@@ -72,7 +72,7 @@ module.exports = {
 		}
 		if (
 			// message.content.match('<@475504086243082261>') != null ||
-			// message.content.match('<@687833636325949496>') != null ||
+			// message.content.match('<@687833636325949496>') != null
 			message.content === '<@475504086243082261>' ||
 			message.content === '<@687833636325949496>'
 		) {

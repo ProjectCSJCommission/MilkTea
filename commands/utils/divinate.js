@@ -14,7 +14,7 @@ module.exports = {
 			'兇',
 			'大凶',
 		];
-		const ping = new MessageEmbed()
+		const divinate = new MessageEmbed()
 			.setColor('RANDOM')
 			.setAuthor({
 				name: interaction.guild.me.displayName,
@@ -22,13 +22,13 @@ module.exports = {
 				url: process.env.SiteURL,
 			})
 			.setTitle('今日運勢')
-			.setDescription(RandomMessage)
+			.setDescription(RandomMessage[Math.floor(Math.random() * RandomMessage.length)])
 			.setFooter({
 				text: process.env.COPYRIGHT,
 				iconURL: interaction.client.user.avatarURL({ dynamic: true }),
 			});
 		await interaction.reply({
-			embeds: [ping],
+			embeds: [divinate],
 			ephemeral: false,
 		});
 	},
