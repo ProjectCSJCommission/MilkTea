@@ -32,14 +32,12 @@ module.exports = {
 		}
 		if (
 			//  日文觸發詞
-			message.content === 'サラこんにちは' ||
 			message.content === 'こんにちは' ||
 			// 中文觸發詞
-			message.content === '星川午安' ||
+			message.content === '奶茶喵午安' ||
 			message.content === '午安' ||
 			// 中日混和觸發詞
-			message.content === '星川こんにちは' ||
-			message.content === 'サラ午安'
+			message.content === '奶茶喵こんにちは'
 		) {
 			const RandomMessage =
 			[
